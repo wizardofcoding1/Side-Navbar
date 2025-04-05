@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+   font-family: "Mukta", sans-serif;
+}
+
+
+#main-menu{
+    background-image: url(./photo.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+
+.btn-one i{
+    cursor: pointer;
+}
+
+.btn-one{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    left: 13px;
+    line-height: 63px;
+}
+
+.side-bar-menu{
+    position: fixed;
+    left: -360px;
+    height: 100vh;
+    width: 270px;
+    border-top-right-radius: 15px;
+    color: rgba(255, 255, 255,0.1);
+    box-shadow: 0 0 7px rgba(255, 255, 255,0.5);
+    transition: all 0.3s linear;
+}
+
+.side-bar-menu .logo {
+    position: absolute;
+    left: 12px;
+    font-weight: bold;
+    width: 100%;
+    line-height: 60px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 0 4px rgba(255, 255, 255,0.5);
+
+}
+
+.side-bar-menu .logo a {
+    position: absolute;
+    left: 30px;
+    color: cyan;
+    text-decoration: none;
+    font-size: 1.2em;
+    
+}
+
+
+.side-bar-menu .btn-two i {
+    cursor: pointer;
+}
+.side-bar-menu .btn-two{
+    font-size: 22px;
+    color: white;
+position: absolute;
+left: 235px;
+line-height: 68px;
+opacity: 0.4;
+transition: all 0.3s linear;
+
+}
+
+.side-bar-menu .menu{
+    color: aliceblue;
+   position: absolute;
+   top: 60px;
+   
+   width: 100%;
+   list-style: none;
+}
+
+.side-bar-menu .menu li {
+    /* width: 100%; */
+    margin-top: 6px;
+    padding: 9px 13px;
+    list-style: none;
+}
+
+
+.side-bar-menu .menu li i,a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1359em;
+}
+
+
+.side-bar-menu .menu li i{
+    padding-right: 9px;
+}
+
+.side-bar-menu .social-media {
+    color: white;
+    position: absolute;
+    bottom: 45px;
+    left: 25%;
+}
+
+.side-bar-menu .social-media i{
+    opacity: 0.4;
+}
+
+
+.side-bar-menu .social-media ul a{
+    padding-right: 20px;
+}
+
+#check{
+    display:none;
+}
+
+
+.side-bar-menu .menu li:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255,0.5);
+    font-size: 1.05em;
+}
+
+.side-bar-menu .btn-two:hover{
+    font-size: 26px;
+    transform: rotate(90deg);
+    transition-timing-function: ease-in;
+}
+
+
+.side-bar-menu .social-media i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.side-bar-menu .social-media a:nth-child(1):hover{
+    color: blue;
+}
+.side-bar-menu .social-media a:nth-child(2):hover{
+    color: black;
+}
+.side-bar-menu .social-media a:nth-child(3):hover{
+    color: lightpink;
+}
+.side-bar-menu .social-media a:nth-child(4):hover{
+    color: red;
+}
+
+#check:checked ~ .side-bar-menu{
+    left: 0;
+}
+#check:checked ~ .btn-one{
+    opacity:0;
+}
